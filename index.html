@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dewan Institutes Online Games Tournament</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #1f2937;
+            --accent: #fca311;
+            --bg-gradient: linear-gradient(135deg, #1f2937 55%, #ffba08 100%);
+            --card-bg: rgba(27, 32, 48, 0.97);
+            --card-shadow: 0 4px 22px rgba(28,24,40,0.13);
+        }
+        body {
+            margin: 0;
+            background: var(--bg-gradient);
+            color: #fff;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .container {
+            max-width: 980px;
+            margin: 36px auto;
+            padding: 2em;
+            background: var(--card-bg);
+            border-radius: 22px;
+            box-shadow: var(--card-shadow);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .logo-group {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 16px 0 8px 0;
+        }
+        .logo {
+            width: 85px;
+            border-radius: 12px;
+            background: #232332;
+            box-shadow: 0 3px 22px rgba(55,55,77,0.17);
+            padding: 8px;
+            transition: transform 0.2s;
+        }
+        .logo:hover {
+            transform: scale(1.08) rotate(-5deg);
+        }
+        h1 {
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 2.2em;
+            color: var(--accent);
+            margin-bottom: 7px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 12px rgba(124, 69, 2, 0.15);
+        }
+        h3 {
+            font-weight: 500;
+            color: var(--accent);
+        }
+        .hero {
+            background: linear-gradient(125deg,#fb6701 40%,#2193b0a7 100%);
+            padding: 28px 12px;
+            border-radius: 16px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .games-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: center;
+            margin: 2em 0;
+        }
+        .game-card {
+            background: #2c3244;
+            border-radius: 13px;
+            padding: 17px 13px;
+            min-width: 170px;
+            box-shadow: 0 2px 11px #22222331;
+            flex: 1 1 200px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .game-img {
+            width: 54px;
+            margin-bottom: 8px;
+        }
+        .game-title {
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 1.14em;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+        .register-section {
+            background: #181e31;
+            padding: 20px 8px;
+            border-radius: 13px;
+            margin: 2em 0 1.4em 0;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(120deg, #fca311 50%, #2193b0 100%);
+            color: #fff;
+            padding: 1em 2.2em;
+            font-size: 1.08em;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 15px 0 0 0;
+            box-shadow: 0 2px 8px #fca3112b;
+            transition: background .17s, transform .15s;
+        }
+        .btn:hover {
+            background: linear-gradient(120deg, #2193b0 60%, #fd6e01 100%);
+            transform: scale(1.06);
+        }
+        .card-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .rule-card {
+            flex: 1 1 190px;
+            background: #222135;
+            border-radius: 11px;
+            padding: 0.8em 1em;
+            min-width: 140px;
+            box-shadow: 0 2px 8px rgba(35,35,55,0.06);
+            color: #fff;
+            font-size: 1em;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .rule-card span {
+            font-size: 1.08em;
+            font-weight: 700;
+            color: #fca311;
+            display: block;
+            margin-bottom: 7px;
+        }
+        footer {
+            margin-top: 2em;
+            text-align: center;
+            font-size: 1em;
+            color: #cccc;
+            padding-bottom: 15px;
+        }
+        @media (max-width: 800px) {
+            .container { padding: 8px;}
+            h1 { font-size: 1.12em;}
+            .games-section { flex-direction: column; gap: 1em;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dewan Institutes esports Tournament</h1>
+            <div class="logo-group">
+                <img src="https://wallpapers.com/images/hd/free-fire-garena-logo-png-8kieob7nzlm0mytp.jpg"
+                     alt="Free Fire Logo" class="logo">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/447/451/desktop-wallpaper-bgmi-logo-bgmi.jpg"
+                     alt="BGMI Logo" class="logo">
+            </div>
+            <h3>Organized by Dewan Btech-CSE-Department | Developed by <a href="https://www.instagram.com/himanshutyagi0006/" target="_blank" >Himanshu Tyagi</a></h3>
+        </header>
+        <div class="hero">
+            <h2>🎮 Are You Gamer?</h2>
+            <p>
+                Join the ultimate online gaming tournament featuring <b>Free Fire</b> and <b>BGMI</b>!<br>
+                Battle solo or as a squad. Claim prizes and college glory!
+            </p>
+        </div>
+        <section class="games-section">
+            <div class="game-card">
+                <img src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/3375a248-a842-47d5-85a1-726953f1b800/preview" width="100" height="auto"
+                     alt="Free Fire" class="game-img">
+                <div class="game-title">Free Fire</div>
+                <div>Fast-paced mobile battle royale.<br>Squad up and survive!</div>
+            </div>
+            <div class="game-card">
+                <img src="https://www.pngall.com/wp-content/uploads/3/PUBG-Logo-PNG-Free-Download.png" width="100" height="auto"
+                     alt="BGMI" class="game-img">
+                <div class="game-title">BGMI</div>
+                <div>India’s favorite battle royale.<br>Tactical, intense, legendary!</div>
+            </div>
+        </section>
+        <section class="register-section">
+            <h2>Register Now</h2>
+            <p>Participation is <b>free</b>. Spots are limited!<br>
+               Fill out the official Google Form to register.<br>
+               <b>Required:</b> Name, Year, Email (for verification), Branch, and Game Choice.
+            </p>
+            <!-- Set your actual Google Form registration link below -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScgt0CJ2losU-Iowr8qfIOvvT92XZYVoVqhAdkTzL7_FafqeQ/viewform?usp=header" target="_blank" class="btn">Register via Google Form</a>
+            <!-- Example: <a href="YOUR_REAL_GOOGLE_FORM_LINK" target="_blank" class="btn">Register</a> -->
+        </section>
+        <section>
+            <h2 style="text-align:center; color:#fca311; font-family:'Orbitron', Arial, sans-serif; margin-bottom:12px;">
+                Tournament Rules
+            </h2>
+            <div class="card-group">
+                <div class="rule-card">
+                    <span>🎮</span> Only Dewan Institutes students can participate.
+                </div>
+                <div class="rule-card">
+                    <span>👥</span> Squad entries allowed.
+                </div>
+                <div class="rule-card">
+                    <span>🛡️</span> No cheating or hacking. Fair play is mandatory.
+                </div>
+                <div class="rule-card">
+                    <span>📅</span> Follow organizers’ instructions and match schedules.
+                </div>
+                <div class="rule-card">
+                    <span>🏆</span> Winners receive exciting prizes and certificates.
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="text-align:center; color:#fca311; font-family:'Orbitron', Arial, sans-serif; margin-bottom:12px;">
+                Tournament information
+            </h2>
+           <div class="card-group">
+                
+                
+      <div class="rule-card">
+                    <span>📢</span> free fire Mentor: <a href="https://www.instagram.com/dear_garg_ji_?igsh=MWxwaXdsenRjcno4aA==" target="_blank"> Abhinav Garg</a>
+                </div>
+                 <div class="rule-card">
+                    <span>📢</span> BGMI Mentor: <a href="https://www.instagram.com/krishnaaa_1844?igsh=MWVmaWt5NTJjczYyaQ==" target="_blank"> Krishna Gupta</a>
+                </div>
+            <div class="rule-card">
+                <span>🔊</span>free fire announcement<a href="https://chat.whatsapp.com/CeRchZ0kQ4YDGNx1ksf1mp" target="_blank"> Click Here</a>
+            </div>
+            <div class="rule-card">
+                <span>🔊</span>BGMI announcement<a href="https://chat.whatsapp.com/JMafiu75JBOIC9E3G2d0N5" target="_blank"> Click Here</a>
+            </div>
+           
+           </div>            
+
+        </section>
+        <footer>
+            © 2025 <a href="https://www.instagram.com/dvsgi/" target="_blank"> Dewan Institutes</a>| Website by  <a href="https://www.instagram.com/himanshutyagi0006/" target="_blank" >Himanshu Tyagi</a> | Game logos © Garena & Krafton India
+        </footer>
+    </div>
+</body>
+</html>
